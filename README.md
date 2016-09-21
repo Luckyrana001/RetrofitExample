@@ -8,12 +8,12 @@ I have seprated the Retrofit functionlity into three type :
 2. Json Array fetching
 3. Multipart image uploading
 Home Page
-![Alt text](https://github.com/Luckyrana001/RetrofitExample/blob/master/device-2016-09-21-153107.png?raw=true "Optional Title")
+![Alt text](https://github.com/Luckyrana001/RetrofitExample/blob/master/device-2016-09-21-153107.png?raw=true "Optional Title" =150x)
 
 
 
 Array result display
-![Alt text](https://github.com/Luckyrana001/RetrofitExample/blob/master/device-2016-09-21-153138.png?raw=true "Optional Title")
+![Alt text](https://github.com/Luckyrana001/RetrofitExample/blob/master/device-2016-09-21-153138.png?raw=true "Optional Title" =150x)
 
 
 
