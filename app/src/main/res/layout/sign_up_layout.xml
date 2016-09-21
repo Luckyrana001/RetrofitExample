@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CollapsingToolbarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+>
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>-->
+<ScrollView
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--OLD PASSWORD-->
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:layout_marginTop="20dip">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/if_you_are_new_user"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10dp"
+                android:layout_marginTop="10dip"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/please_request_for"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10dp"
+               />
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="20dp"
+                android:background="@color/result_view"/>
+        </LinearLayout>
+        <ImageView
+            android:id ="@+id/profile_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/avatar"
+            android:paddingLeft="10dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/add_photo"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="visible"
+            />
+
+        <!--NEW PASSWORD-->
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:layout_marginTop="0dip">
+            <View android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/result_view"/>
+            <TextView
+                android:id="@+id/newpass_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/prompt_user_capital"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+
+                android:layout_margin="10dip"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/result_view"/>
+        </LinearLayout>
+        <EditText
+            android:id ="@+id/user_name_et"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:layout_height="40dp"
+            />
+
+        <TextView
+            android:id="@+id/user_name_edit_error"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/error_field_required"
+            android:textColor="@android:color/holo_red_dark"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+        <!--CONFIRM PASSWORD-->
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:layout_marginTop="0dip">
+            <View android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/result_view"/>
+            <TextView
+                android:id="@+id/confirmpass_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/password_capital"
+                android:paddingLeft="10dp"
+
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_margin="10dip"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/result_view"/>
+        </LinearLayout>
+        <EditText
+            android:id ="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/result_view"/>
+        <TextView
+            android:id="@+id/password_error"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/password_error"
+            android:textColor="@android:color/holo_red_dark"
+            android:paddingLeft="20dp"
+            android:textSize="12sp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id ="@+id/confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/next_str"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="25dip"
+            android:textSize="14sp"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginRight="25dip"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</ScrollView></android.support.design.widget.CollapsingToolbarLayout>
