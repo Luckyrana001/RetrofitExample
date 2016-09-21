@@ -9,6 +9,8 @@ I have seprated the Retrofit functionlity into three type :
 3. Multipart image uploading
 Home Page
 https://github.com/Luckyrana001/RetrofitExample/blob/master/device-2016-09-21-153107.png
+
+
 Array result display
 https://github.com/Luckyrana001/RetrofitExample/blob/master/device-2016-09-21-153138.png
 
